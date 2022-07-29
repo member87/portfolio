@@ -18,8 +18,9 @@ class Controller extends BaseController
 	private $projects = [
 		'cam-finder',
 		'cam-finder-web',
+		'portfolio',
 		'nvim',
-		'dotfiles'
+		'dotfiles',
 	];
 
 	private function checkProject($project)
