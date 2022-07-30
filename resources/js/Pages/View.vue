@@ -47,7 +47,7 @@ store.project = props.project;
           </div>
           <ReadMe class="lg:col-span-3" />
           <SidePanel
-            class="row-start-2 lg:row-span-2 lg:col-start-4 lg:row-start-1 lg:row-auto mt-6" />
+            class="row-start-2 lg:row-span-2 lg:col-start-4 lg:row-start-1 mt-6" />
         </div>
       </div>
     </div>
