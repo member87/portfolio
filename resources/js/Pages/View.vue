@@ -22,7 +22,8 @@ store.project = props.project;
   <Layout>
     <div class="p-6">
       <div class="w-full md:w-5/6 lg:w-3/4 mx-auto">
-        <div class="grid grid-cols-1 gap-2 grid-flow-dense lg:grid-cols-4">
+        <div
+          class="grid grid-cols-1 gap-0 grid-flow-dense lg:gap-3 lg:grid-cols-4">
           <div class="col-span-3">
             <div class="text-light-shade relative mt-0 lg:mt-2">
               <h1 class="text-3xl py-4 inline-block lg:px-2">

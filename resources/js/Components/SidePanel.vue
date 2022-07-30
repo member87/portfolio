@@ -25,7 +25,7 @@ let store = useStore();
         {{ topic }}
       </Pill>
     </div>
-    <div class="my-6">
+    <div class="my-6 flex lg:block">
       <Statistic
         icon="fa-solid fa-star"
         index="stargazers_count"
