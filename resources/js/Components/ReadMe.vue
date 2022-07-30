@@ -14,7 +14,7 @@ let markdown = ref("");
 
 <template>
   <div
-    class="mr-3 prose prose-sm max-w-full border border-dark-accent/60 rounded shadow p-10 prose-invert md:prose-base">
+    class="mr-0 lg:mr-3 prose prose-sm max-w-full border border-dark-accent/60 rounded shadow p-10 prose-invert md:prose-base">
     <span v-html="markdown"></span>
   </div>
 </template>
