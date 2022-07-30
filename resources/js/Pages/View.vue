@@ -24,12 +24,13 @@ store.project = props.project;
       <div class="w-full md:w-5/6 lg:w-3/4 mx-auto">
         <div
           class="grid grid-cols-1 gap-0 grid-flow-dense lg:gap-3 lg:grid-cols-4">
-          <div class="col-span-3">
+          <div class="col-span-3 max-w-full">
             <div class="text-light-shade relative mt-0 lg:mt-2">
               <h1 class="text-3xl py-4 inline-block lg:px-2">
                 {{ store.project }}
               </h1>
-              <div class="absolute right-0 bottom-5 right-0 lg:right-3">
+              <div
+                class="static mb-6 lg:absolute right-0 bottom-5 right-0 lg:mb-0 lg:right-3">
                 <a
                   :href="store.info.html_url"
                   class="bg-dark-accent p-2 border-2 rounded-l border-dark-accent text-sm shadow-lg">
