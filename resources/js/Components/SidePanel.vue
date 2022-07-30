@@ -14,18 +14,18 @@ let store = useStore();
       <span class="font-bold">Description</span>
       <div>{{ store.info.description }}</div>
     </div>
-    <div class="my-6 font-bold" v-if="store.info.homepage">
+    <div class="mt-6 font-bold" v-if="store.info.homepage">
       <i class="fa-solid fa-link mr-2"></i>
       <a :href="store.info.homepage" class="text-blue-500">{{
         store.info.homepage
       }}</a>
     </div>
-    <div class="span w-full">
+    <div class="span w-full mt-6">
       <Pill v-for="topic in store.info.topics">
         {{ topic }}
       </Pill>
     </div>
-    <div class="my-6 flex lg:block">
+    <div class="mt-6 flex lg:block">
       <Statistic
         icon="fa-solid fa-star"
         index="stargazers_count"
@@ -33,7 +33,7 @@ let store = useStore();
       <Statistic icon="fa-solid fa-eye" index="watchers" />
       <Statistic icon="fa-solid fa-code-branch" index="forks" />
     </div>
-    <hr class="border-dark-accent/60" />
+    <hr class="border-dark-accent/60 mt-6" />
     <Lang class="my-6" />
     <hr class="border-dark-accent/60" />
     <CachedTimes class="my-6" />

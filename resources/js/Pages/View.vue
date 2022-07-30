@@ -22,33 +22,32 @@ store.project = props.project;
   <Layout>
     <div class="p-6">
       <div class="w-full md:w-5/6 lg:w-3/4 mx-auto">
-        <div
-          class="grid grid-cols-1 gap-0 grid-flow-dense lg:gap-3 lg:grid-cols-4">
-          <div class="col-span-3 max-w-full">
-            <div class="text-light-shade relative mt-0 lg:mt-2">
-              <h1 class="text-3xl py-4 inline-block lg:px-2">
-                {{ store.project }}
-              </h1>
-              <div
-                class="static mb-6 lg:absolute right-0 bottom-5 right-0 lg:mb-0 lg:right-3">
-                <a
-                  :href="store.info.html_url"
-                  class="bg-dark-accent p-2 border-2 rounded-l border-dark-accent text-sm shadow-lg">
-                  <i class="fa-brands fa-github fa-xl mr-1"></i>
-                  view on github
-                </a>
-                <a
-                  :href="`https://github.com/member87/${props.project}/archive/refs/heads/main.zip`"
-                  class="border-2 border-dark-accent p-2 text-sm rounded-r">
-                  <i class="fa-brands fa-download fa-xl mr-1"></i>
-                  Download
-                </a>
-              </div>
+        <div class="grid grid-cols-1 gap-0 lg:gap-3 lg:grid-cols-4">
+          <div
+            class="text-light-shade flex flex-col mt-0 break-all sm:flex-row lg:col-span-3 lg:mt-2">
+            <h1
+              class="text-md py-4 flex-auto inline-block mr-3 sm:text-2xl md:text-xl lg:px-2">
+              <a href="/" class="text-blue-500">member87</a> /
+              <span class="font-bold">{{ store.project }}</span>
+            </h1>
+            <div class="shrink-0 sm:mt-5 lg:mr-3">
+              <a
+                :href="store.info.html_url"
+                class="bg-dark-accent min-w-full p-2 border-2 rounded-l border-dark-accent text-xs shadow-lg sm:text-sm">
+                <i class="fa-brands fa-github fa-xl mr-1"></i>
+                view on github
+              </a>
+              <a
+                :href="`https://github.com/member87/${props.project}/archive/refs/heads/main.zip`"
+                class="border-2 border-dark-accent p-2 text-xs rounded-r sm:text-sm">
+                <i class="fa-brands fa-download fa-xl mr-1"></i>
+                Download
+              </a>
             </div>
-
-            <ReadMe />
           </div>
-          <SidePanel class="row-start-1 lg:row-auto mt-6" />
+          <ReadMe class="lg:col-span-3" />
+          <SidePanel
+            class="row-start-2 lg:row-span-2 lg:col-start-4 lg:row-start-1 lg:row-auto mt-6" />
         </div>
       </div>
     </div>
