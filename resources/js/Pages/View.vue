@@ -40,7 +40,7 @@ store.project = props.project;
               <a
                 :href="`https://github.com/member87/${props.project}/archive/refs/heads/main.zip`"
                 class="border-2 border-dark-accent p-2 text-xs rounded-r sm:text-sm">
-                <i class="fa-brands fa-download fa-xl mr-1"></i>
+                <i class="fa-solid fa-download fa-lg mr-1"></i>
                 Download
               </a>
             </div>
