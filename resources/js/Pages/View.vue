@@ -22,9 +22,10 @@ store.project = props.project;
   <Layout>
     <div class="p-6">
       <div class="w-full md:w-5/6 lg:w-3/4 mx-auto">
-        <div class="grid grid-cols-1 gap-0 lg:gap-3 lg:grid-cols-4">
+        <div
+          class="grid grid-cols-1 gap-0 lg:gap-3 lg:grid-cols-[minmax(0,1fr)_280px]">
           <div
-            class="text-light-shade flex flex-col mt-0 break-all sm:flex-row lg:col-span-3 lg:mt-2">
+            class="text-light-shade flex flex-col mt-0 break-all sm:flex-row lg:mt-2">
             <h1
               class="text-md py-4 flex-auto inline-block mr-3 sm:text-lg md:text-xl lg:px-2">
               <a href="/" class="text-blue-500">member87</a> /
@@ -45,9 +46,9 @@ store.project = props.project;
               </a>
             </div>
           </div>
-          <ReadMe class="lg:col-span-3" />
+          <ReadMe class="lg:row-start-2" />
           <SidePanel
-            class="row-start-2 lg:row-span-2 lg:col-start-4 lg:row-start-1 mt-6" />
+            class="row-start-2 lg:row-span-2 lg:col-start-2 lg:row-start-1 mt-6" />
         </div>
       </div>
     </div>
