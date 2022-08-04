@@ -18,8 +18,8 @@ let props = defineProps({
         <span class="text-light-shade text-gray-300">README.md</span>
       </h1>
       <ReadMe project="member87" />
-      <h2 class="mt-12 text-4xl text-light-shade font-bold">Github Projects</h2>
-      <hr class="my-2 border-dark-accent/50" />
+      <h2 class="mt-12 text-xl font-bold text-gray-300">GitHub Projects</h2>
+      <hr class="my-2 border-gray-700" />
       <div
         class="grid grid-cols-1 gap-8 text-light-shade py-6 lg:grid-cols-2 xl:grid-cols-3">
         <div v-for="project in projects">
