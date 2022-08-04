@@ -18,16 +18,18 @@ let info = ref({});
 
 <template>
   <div class="bg-slate-800/40 rounded overflow-hidden shadow h-full">
-    <h2 class="font-bold text-2xl bg-zinc-100/10 py-2 px-6 relative">
-      {{ project }}
-      <a :href="info.html_url">
-        <span
-          class="text-sm bg-dark-shade px-2 py-1 rounded-full absolute right-2 top-2 m-1">
-          <i class="fa-brands fa-github mr-1"></i>
-          github
-        </span>
+    <div
+      class="font-bold text-2xl bg-zinc-100/10 py-2 px-6 flex items-center justify-center">
+      <h2 class="flex-auto">
+        {{ project }}
+      </h2>
+      <a
+        :href="info.html_url"
+        class="text-sm bg-dark-shade px-2 py-1 rounded-full whitespace-nowrap">
+        <i class="fa-brands fa-github mr-1"></i>
+        github
       </a>
-    </h2>
+    </div>
     <a :href="route('view', project)">
       <div class="p-6">
         <div class="text-light-shade/60">{{ info.description }}</div>
