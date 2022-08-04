@@ -12,14 +12,13 @@ let props = defineProps({
 <template>
   <Layout>
     <div class="w-full p-4 lg:w-3/4 lg:mx-auto">
-      <h1
-        class="text-md py-4 flex-auto inline-block mr-3 sm:text-lg md:text-xl lg:px-2">
+      <h1 class="text-md py-4 flex-auto inline-block mr-3 md:text-lg lg:px-2">
         <a href="/" class="text-blue-500">member87</a>
         <span class="text-gray-500"> / </span>
-        <span class="font-bold text-light-shade">member87</span>
+        <span class="text-light-shade text-gray-300">README.md</span>
       </h1>
       <ReadMe project="member87" />
-      <h2 class="mt-12 text-xl text-light-shade font-bold">Github Projects</h2>
+      <h2 class="mt-12 text-4xl text-light-shade font-bold">Github Projects</h2>
       <hr class="my-2 border-dark-accent/50" />
       <div
         class="grid grid-cols-1 gap-8 text-light-shade py-6 lg:grid-cols-2 xl:grid-cols-3">
