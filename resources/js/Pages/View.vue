@@ -8,6 +8,7 @@ const store = useStore();
 
 let props = defineProps({
   project: String,
+  username: String,
 });
 
 store.project = props.project;
@@ -28,7 +29,7 @@ store.project = props.project;
             class="text-light-shade flex flex-col mt-0 break-all sm:flex-row lg:mt-2">
             <h1
               class="text-md py-4 flex-auto inline-block mr-3 md:text-xl lg:px-2">
-              <a href="/" class="text-blue-500">member87</a> /
+              <a href="/" class="text-blue-500">{{ props.username }}</a> /
               <span class="font-bold">{{ store.project }}</span>
             </h1>
             <div class="shrink-0 sm:mt-5">

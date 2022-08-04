@@ -6,6 +6,7 @@ import ReadMe from "@/Components/ReadMe.vue";
 
 let props = defineProps({
   projects: Object,
+  username: String,
 });
 </script>
 
@@ -13,11 +14,11 @@ let props = defineProps({
   <Layout>
     <div class="w-full p-4 lg:w-3/4 lg:mx-auto">
       <h1 class="text-md py-4 flex-auto inline-block mr-3 md:text-lg lg:px-2">
-        <a href="/" class="text-blue-500">member87</a>
+        <a href="/" class="text-blue-500">{{ props.username }}</a>
         <span class="text-gray-500"> / </span>
         <span class="text-light-shade text-gray-300">README.md</span>
       </h1>
-      <ReadMe project="member87" />
+      <ReadMe :project="props.username" />
       <h2 class="mt-24 text-3xl text-gray-300">GitHub Projects</h2>
       <hr class="my-4 border-gray-700" />
       <div
