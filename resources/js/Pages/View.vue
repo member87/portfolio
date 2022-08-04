@@ -23,7 +23,7 @@ store.project = props.project;
     <div class="p-6">
       <div class="w-full md:w-5/6 lg:w-3/4 mx-auto">
         <div
-          class="grid grid-cols-1 gap-0 lg:gap-3 lg:grid-cols-[minmax(0,1fr)_280px]">
+          class="grid grid-cols-1 gap-0 lg:gap-6 lg:grid-cols-[minmax(0,1fr)_280px]">
           <div
             class="text-light-shade flex flex-col mt-0 break-all sm:flex-row lg:mt-2">
             <h1
@@ -31,7 +31,7 @@ store.project = props.project;
               <a href="/" class="text-blue-500">member87</a> /
               <span class="font-bold">{{ store.project }}</span>
             </h1>
-            <div class="shrink-0 sm:mt-5 lg:mr-3">
+            <div class="shrink-0 sm:mt-5">
               <a
                 :href="store.info.html_url"
                 class="bg-dark-accent min-w-full p-2 border-2 rounded-l border-dark-accent text-xs shadow-lg sm:text-sm">

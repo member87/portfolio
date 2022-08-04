@@ -16,9 +16,9 @@ let store = useStore();
     </div>
     <div class="mt-6 font-bold" v-if="store.info.homepage">
       <i class="fa-solid fa-link mr-2"></i>
-      <a :href="store.info.homepage" class="text-blue-500">{{
-        store.info.homepage
-      }}</a>
+      <a :href="store.info.homepage" class="text-blue-500">
+        {{ store.info.homepage }}
+      </a>
     </div>
     <div class="span w-full mt-6">
       <Pill v-for="topic in store.info.topics">

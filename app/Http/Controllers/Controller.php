@@ -25,7 +25,7 @@ class Controller extends BaseController
 
 	private function checkProject($project)
 	{
-		return in_array($project, $this->projects);
+		return in_array($project, $this->projects) || $project == "member87";
 	}
 
 	public function index()
@@ -89,6 +89,7 @@ class Controller extends BaseController
 			return Cache::get($key);
 		}
 		$response = Http::get($url);
+
 		return Cache::remember($key, 43200, function() use ($response)
 		{
 			return $response->body();
