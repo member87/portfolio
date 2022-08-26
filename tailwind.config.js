@@ -33,7 +33,8 @@ module.exports = {
 				"Python": "rgb(53, 114, 165)",
 				"Lua": "#000080",
 				"Shell": "#89e051",
-				"GLSL": "#5686a5"
+				"GLSL": "#5686a5",
+        "Rust": "rgb(222, 165, 132)"
 			},
 		},
 	},
