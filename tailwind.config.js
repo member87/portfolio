@@ -40,7 +40,7 @@ module.exports = {
 	},
 	safelist: [
 		{
-			pattern: /bg-(PHP|Vue|Blade|JavaScript|CSS|Python|Lua|Shell|GLSL)/,
+			pattern: /bg-(PHP|Vue|Blade|JavaScript|CSS|Python|Lua|Shell|GLSL|Rust)/,
 		},
 	],
 	plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
